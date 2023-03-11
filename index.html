@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="leftHero">
+            <div class="banner">
+                <img src="./pictures/enslaved.png" alt="band-logo" class="logo">
+                <div class="bannerText">SIGN UP FORM</div>
+            </div>
+        </div>
+        <div class="rightHero">
+            <div class="about">
+                <div class="aboutText">
+                    <p>This is not a real online service!  You know you need something like this in your life to help you realize your deepest dreams.  Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to</p>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <legend>Lets do this</legend>
+                    <div class="formContainer">
+                        <div class="inputRow">
+                            <div class="inputContainer">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" name="fname" id="fname">
+                            </div>
+                            
+                            <div class="inputContainer">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" name="lname" id="lname"> 
+                            </div>
+                        </div>
+                        <div class="inputRow">
+                            <div class="inputContainer">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="inputContainer">
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
+                        </div>
+                        <div class="inputRow">
+                            <div class="inputContainer">
+                                <label for="firstPwd">PASSWORD</label>
+                                <input type="password" name="pwd" id="firstPwd">
+                            </div>
+                            <div class="inputContainer">
+                                <label for="secPwd">CONFIRM PASSWORD</label>
+                                <input type="password" name="pwd" id="secPwd">
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <div class="logIn">
+                    <div class="logInContainer">
+                        <button type="submit">Create Account</button>
+                        <div class="existingAccount">
+                            <span>Already have an account?</span><button>Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

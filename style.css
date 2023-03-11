@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftHero {
+    height: 100%;
+    width: 40%;
+    flex-grow: 1;
+
+    background-image: url(../../Pictures/Wallpapers/1666644909446707.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.leftHero .banner {
+    position: absolute;
+    top: 15%;
+    min-height: 100px;
+    height: 15%; 
+    width: 100%;
+    background-color: rgb(20, 0, 25);
+    opacity: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    padding: 2% 0 2% 0;
+}
+
+.leftHero .banner .bannerText {
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+}
+
+.leftHero .banner img.logo {
+    height: 90%;
+    opacity: 50%;
+}
+
+.rightHero {
+    color: white;
+    background-color: rgb(41, 44, 59);
+    height: 100%;
+    flex-grow: 1;
+    width: 60%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightHero .about {
+    color: white;
+    min-height: 25vh;
+    max-height: 33vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rightHero .about .aboutText {
+    width: 90%;
+    margin: 0;
+    font-size: 1.25rem;
+    
+}
+
+.rightHero .form {
+    min-height: 50vh;
+    width: 100%;
+    background-color:rgb(0, 16, 34);
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.rightHero .form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightHero .form .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.rightHero .form .inputRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px){
+    .rightHero .form .inputRow {
+        width: 100%;
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .rightHero .form .inputContainer {
+        width: 90%;
+    }
+}
+
+.rightHero .logIn {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    flex: auto;
+}
+
+.rightHero .logIn .logInContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logInContainer button[type=submit] {
+    width: 50%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(0, 16, 34);
+}
+
+.existingAccount button {
+    color: rgb(0, 16, 34);
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .leftHero,
+    .rightHero {
+        width: 100%
+    }
+
+    .leftHero {
+        max-height: 20vh;
+    }
+
+    .rightHero {
+        max-height: 80%;
+    }
+}
