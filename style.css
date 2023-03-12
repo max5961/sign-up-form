@@ -7,10 +7,15 @@
     src: url(./fonts/rules/rules-webfont.woff);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     color: var(--textColor);
+    
 }
 
 .main {
@@ -107,6 +112,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
+    
 }
 
 .rightHero .form .inputContainer {
