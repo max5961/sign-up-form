@@ -208,6 +208,12 @@ input:focus-visible {
     border: 0;
 }
 
+.notMatch {
+    visibility: hidden;
+    z-index: 2;
+    color: rgb(0, 174, 187);
+}
+
 
 
 @media only screen and (max-width: 600px){
