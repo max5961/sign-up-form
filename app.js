@@ -1,5 +1,5 @@
 const firstPwd = document.getElementById('firstPwd');
-const secondPwd = document.getElementById('secPwd');
+const secPwd = document.getElementById('secPwd');
 const submitBtn = document.getElementById('submitBtn');
 const notMatch = document.querySelector('.notMatch');
 const tel = document.getElementById('tel');
@@ -18,10 +18,20 @@ tel.addEventListener('input', () => {
     }
 })
 
-secondPwd.addEventListener('input', () => {
-    if(firstPwd.value != secondPwd.value){
+function checkPwds(pwdOne, pwdTwo){
+    if(pwdOne.length == 0 && pwdTwo.length == 0){
+        notMatch.style.visibility = 'hidden';
+    }
+    else if(pwdOne.value != pwdTwo.value){
         notMatch.style.visibility = 'visible';
     } else {
         notMatch.style.visibility = 'hidden';
     }
+}
+
+secPwd.addEventListener('input', () => {
+    checkPwds(firstPwd,secPwd);
 })
+
+
+
