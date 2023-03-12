@@ -19,7 +19,7 @@ tel.addEventListener('input', () => {
 })
 
 function checkPwds(pwdOne, pwdTwo){
-    if(pwdOne.length == 0 && pwdTwo.length == 0){
+    if((pwdOne.value.length == 0 && pwdTwo.value.length == 0) || pwdTwo.value.length == 0){
         notMatch.style.visibility = 'hidden';
     }
     else if(pwdOne.value != pwdTwo.value){
