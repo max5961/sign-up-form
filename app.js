@@ -33,5 +33,11 @@ secPwd.addEventListener('input', () => {
     checkPwds(firstPwd,secPwd);
 })
 
+firstPwd.addEventListener('input', () => {
+    if(secPwd.value.length > 0){
+        checkPwds(firstPwd,secPwd);
+    }
+})
+
 
 
