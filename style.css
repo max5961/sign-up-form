@@ -217,16 +217,37 @@ input:focus-visible {
 
 
 @media only screen and (max-width: 600px){
+    body {
+        height: 180vh;
+    }
+
+    .main {
+        height: 180vh;
+        width: 100vw;
+    }
+
     .leftHero,
     .rightHero {
-        width: 100%
+        width: 100%;
+    }
+
+    .rightHero {
+        height: 120vh;
     }
 
     .leftHero {
-        max-height: 20vh;
+        height: 60vh;
     }
 
-    .rightHero {
-        max-height: 80%;
+    .rightHero .about {
+        height: 40vh;
+    }
+
+    .rightHero .form {
+        height: 60vh;
+    }
+
+    .rightHero .logIn {
+        height: 15vh;
     }
 }
