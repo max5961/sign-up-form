@@ -3,6 +3,21 @@ const secPwd = document.getElementById('secPwd');
 const submitBtn = document.getElementById('submitBtn');
 const notMatch = document.querySelector('.notMatch');
 const tel = document.getElementById('tel');
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+
+let names = [fname, lname]
+
+names.forEach(name => {
+    name.addEventListener('input', () => {
+        if(name.value.length == 1){
+            let char = name.value.charAt(0);
+            char = char.toUpperCase();
+            name.value = char;
+
+        }
+    })
+})
 
 tel.addEventListener('input', () => {
     if(/[a-zA-Z]/.test(tel.value.charAt(tel.value.length-1))){
